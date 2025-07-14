@@ -3,37 +3,55 @@
     padding: 0px;
 }
 
-
-html{
-    font-size: 22px;
-}
-
-body{
-    background-color: rgb(192, 207, 108);
-    color: rgb(82, 6, 224);
-    padding: 1rem;
-}
-
 h1{
     margin: 30px;
     text-align: center;
     font-family: Verdana;
 }
 
-.card{
-    background-color: dodgerblue;
-    color: white;
-    padding: 1rem;
-    height: 4rem;
-}
-
-.cards{
-    max-width: 1200px;
-    margin: 0 auto;
+#container{
     display: grid;
-    gap: 1rem;
+    grid-template-areas: 
+    "header header"
+    "aside article"
+    "section section"
+    "footer footer";
+    gap: 10px;
+    margin: 10px;
+    grid-auto-rows: 60px 500px 200px 40px;
+    height: 100vh;
 }
 
-@media (min-width: 900px) {
-    .cards { grid-template-columns: repeat(3, 1fr);}
+header{
+    grid-area: header;
+    background-color: blueviolet;
+    border-radius: 6px;
+}
+
+aside{
+    grid-area: aside;
+    background-color: blue;
+    width: 200px;
+    border-radius: 6px;
+}
+
+article{
+    grid-area: article;
+    background-color: rgb(202, 153, 45);
+    width: 1110px;
+    border-radius: 6px;
+}
+
+section{
+    grid-area: section;
+    background-color: aquamarine;
+    border-radius: 6px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: brown;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
 }
