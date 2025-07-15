@@ -3,12 +3,6 @@
     padding: 0px;
 }
 
-h1{
-    margin: 30px;
-    text-align: center;
-    font-family: Verdana;
-}
-
 #container{
     display: grid;
     grid-template-areas: 
@@ -18,7 +12,7 @@ h1{
     "footer footer";
     gap: 10px;
     margin: 10px;
-    grid-auto-rows: 60px 500px 200px 40px;
+    grid-auto-rows: 60px 500px 200px 60px;
     height: 100vh;
 }
 
@@ -38,7 +32,7 @@ aside{
 article{
     grid-area: article;
     background-color: rgb(202, 153, 45);
-    width: 1110px;
+    width: 1120px;
     border-radius: 6px;
 }
 
@@ -54,4 +48,10 @@ footer{
     border-radius: 6px;
     text-align: center;
     color: white;
+}
+
+p{
+    text-align: center;
+    font-family: Verdana;
+    font-size: 22px;
 }
